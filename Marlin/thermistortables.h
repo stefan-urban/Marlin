@@ -5,6 +5,144 @@
 
 #define OVERSAMPLENR 16
 
+
+#if (THERMISTORHEATER_0 == 14) || (THERMISTORHEATER_1 == 14) || (THERMISTORHEATER_2 == 14) || (THERMISTORHEATER_3 == 14) || (THERMISTORBED == 14)
+// Theristor beta 3550
+
+const short temptable_14[][2] PROGMEM = {
+		{  114 ,  300 },
+		{  121 ,  295 },
+		{  127 ,  290 },
+		{  135 ,  285 },
+		{  143 ,  280 },
+		{  151 ,  275 },
+		{  160 ,  270 },
+		{  170 ,  265 },
+		{  181 ,  260 },
+		{  193 ,  255 },
+		{  205 ,  250 },
+		{  219 ,  245 },
+		{  234 ,  240 },
+		{  250 ,  235 },
+		{  268 ,  230 },
+		{  287 ,  225 },
+		{  308 ,  220 },
+		{  331 ,  215 },
+		{  357 ,  210 },
+		{  385 ,  205 },
+		{  415 ,  200 },
+		{  449 ,  195 },
+		{  486 ,  190 },
+		{  527 ,  185 },
+		{  572 ,  180 },
+		{  623 ,  175 },
+		{  678 ,  170 },
+		{  740 ,  165 },
+		{  809 ,  160 },
+		{  886 ,  155 },
+		{  972 ,  150 },
+		{  1068 ,  145 },
+		{  1175 ,  140 },
+		{  1296 ,  135 },
+		{  1430 ,  130 },
+		{  1581 ,  125 },
+		{  1751 ,  120 },
+		{  1941 ,  115 },
+		{  2155 ,  110 },
+		{  2395 ,  105 },
+		{  2663 ,  100 },
+		{  2964 ,  95 },
+		{  3300 ,  90 },
+		{  3674 ,  85 },
+		{  4090 ,  80 },
+		{  4548 ,  75 },
+		{  5052 ,  70 },
+		{  5601 ,  65 },
+		{  6195 ,  60 },
+		{  6832 ,  55 },
+		{  7506 ,  50 },
+		{  8211 ,  45 },
+		{  8938 ,  40 },
+		{  9676 ,  35 },
+		{  10412 ,  30 },
+		{  11135 ,  25 },
+		{  11830 ,  20 },
+		{  12486 ,  15 },
+		{  13093 ,  10 },
+		{  13644 ,  5 },
+		{  14134 ,  0 }
+ };
+#endif
+
+#if (THERMISTORHEATER_0 == 15) || (THERMISTORHEATER_1 == 15) || (THERMISTORHEATER_2 == 15) || (THERMISTORHEATER_3 == 15) || (THERMISTORBED == 15)
+// Theristor beta 4700
+
+const short temptable_15[][2] PROGMEM = {
+		{  11*OVERSAMPLENR ,  300 },
+		{  12*OVERSAMPLENR ,  295 },
+		{  13*OVERSAMPLENR ,  290 },
+		{  14*OVERSAMPLENR ,  285 },
+		{  15*OVERSAMPLENR ,  280 },
+		{  16*OVERSAMPLENR ,  275 },
+		{  17*OVERSAMPLENR ,  270 },
+		{  18*OVERSAMPLENR ,  265 },
+		{  20*OVERSAMPLENR ,  260 },
+		{  22*OVERSAMPLENR ,  255 },
+		{  24*OVERSAMPLENR ,  250 },
+		{  26*OVERSAMPLENR ,  245 },
+		{  28*OVERSAMPLENR ,  240 },
+		{  31*OVERSAMPLENR ,  235 },
+		{  33*OVERSAMPLENR ,  230 },
+		{  37*OVERSAMPLENR ,  225 },
+		{  40*OVERSAMPLENR ,  220 },
+		{  44*OVERSAMPLENR ,  215 },
+		{  48*OVERSAMPLENR ,  210 },
+		{  53*OVERSAMPLENR ,  205 },
+		{  59*OVERSAMPLENR ,  200 },
+		{  65*OVERSAMPLENR ,  195 },
+		{  72*OVERSAMPLENR ,  190 },
+		{  80*OVERSAMPLENR ,  185 },
+		{  88*OVERSAMPLENR ,  180 },
+		{  98*OVERSAMPLENR ,  175 },
+		{  109*OVERSAMPLENR ,  170 },
+		{  121*OVERSAMPLENR ,  165 },
+		{  135*OVERSAMPLENR ,  160 },
+		{  151*OVERSAMPLENR ,  155 },
+		{  168*OVERSAMPLENR ,  150 },
+		{  188*OVERSAMPLENR ,  145 },
+		{  210*OVERSAMPLENR ,  140 },
+		{  234*OVERSAMPLENR ,  135 },
+		{  261*OVERSAMPLENR ,  130 },
+		{  290*OVERSAMPLENR ,  125 },
+		{  322*OVERSAMPLENR ,  120 },
+		{  357*OVERSAMPLENR ,  115 },
+		{  395*OVERSAMPLENR ,  110 },
+		{  435*OVERSAMPLENR ,  105 },
+		{  477*OVERSAMPLENR ,  100 },
+		{  520*OVERSAMPLENR ,  95 },
+		{  565*OVERSAMPLENR ,  90 },
+		{  610*OVERSAMPLENR ,  85 },
+		{  655*OVERSAMPLENR ,  80 },
+		{  699*OVERSAMPLENR ,  75 },
+		{  741*OVERSAMPLENR ,  70 },
+		{  780*OVERSAMPLENR ,  65 },
+		{  817*OVERSAMPLENR ,  60 },
+		{  850*OVERSAMPLENR ,  55 },
+		{  879*OVERSAMPLENR ,  50 },
+		{  905*OVERSAMPLENR ,  45 },
+		{  928*OVERSAMPLENR ,  40 },
+		{  947*OVERSAMPLENR ,  35 },
+		{  963*OVERSAMPLENR ,  30 },
+		{  976*OVERSAMPLENR ,  25 },
+		{  987*OVERSAMPLENR ,  20 },
+		{  995*OVERSAMPLENR ,  15 },
+		{  1002*OVERSAMPLENR ,  10 },
+		{  1007*OVERSAMPLENR ,  5 },
+		{  1011*OVERSAMPLENR ,  0 }
+ };
+#endif
+
+
 #if (THERMISTORHEATER_0 == 1) || (THERMISTORHEATER_1 == 1)  || (THERMISTORHEATER_2 == 1) || (THERMISTORHEATER_3 == 1) || (THERMISTORBED == 1) //100k bed thermistor
 
 const short temptable_1[][2] PROGMEM = {
@@ -1232,5 +1370,6 @@ const short temptable_1047[][2] PROGMEM = {
 #  define HEATER_BED_RAW_LO_TEMP 0
 # endif
 #endif
+
 
 #endif //THERMISTORTABLES_H_

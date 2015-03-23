@@ -67,7 +67,7 @@
 #endif
 
 #if MB(RAMPS_13_EFB) || MB(RAMPS_13_EFF)
-  #define FAN_PIN            9 // (Sprinter config)
+  #define FAN_PIN            -1 // 9 // (Sprinter config)
   #if MB(RAMPS_13_EFF)
     #define CONTROLLERFAN_PIN  -1 // Pin used for the fan to cool controller
   #endif
@@ -94,7 +94,7 @@
 #if MB(RAMPS_13_EFB)
   #define HEATER_1_PIN       -1
 #else
-  #define HEATER_1_PIN       9    // EXTRUDER 2 (FAN On Sprinter)
+  #define HEATER_1_PIN       -1 // 9    // EXTRUDER 2 (FAN On Sprinter)
 #endif
 
 #define HEATER_2_PIN       -1
